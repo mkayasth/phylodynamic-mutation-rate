@@ -3,6 +3,33 @@
 {% block title %}Phylodynamic study Database{% endblock %}
 
 {% block navbar %}
+<style>
+.navbar-inverse {
+    background-color: #000; /* Black background */
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border-radius */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff; /* White text color */
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #ccc; /* Light gray text color on hover */
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff; /* White border color for toggle button */
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff; /* White color for toggle button bars */
+}
+
+</style>
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -16,7 +43,6 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/search">Search</a></li>
                 <li><a href="/ref">References</a></li>
                 <li><a href="/help">Help</a></li>
             </ul>
@@ -24,6 +50,8 @@
     </div>
 </div>
 {% endblock %}
+
+
 
 {% block content1 %}
 <div class="container">

@@ -1,3 +1,4 @@
+-- Flask requirements.
 alembic==1.4.2
 click==7.1.1
 dominate==2.5.1
@@ -17,3 +18,13 @@ SQLAlchemy==1.3.16
 visitor==0.1.3
 Werkzeug==1.0.1
 WTForms==2.2.1
+
+-- Prokka requirements
+BioPerl
+GNU
+BLAST+
+Prodigal
+TBL2ASN
+Aragorn
+HMMER3
+minced
