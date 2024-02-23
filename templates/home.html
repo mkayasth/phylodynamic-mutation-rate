@@ -9,6 +9,29 @@
 
         
     <p> - Merit Kayastha </p>
+
+    <br> <br>
+
+    <style>
+        #textbox {
+          width: 300px;
+          height: 150px;
+        }
+      </style>
+
+    <form>
+        <label for="textbox">Enter your sequences in FASTA format below: </label> <br>
+        <input type="text" id="textbox" name="textbox"> <br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <br>
+
+      <h3> Output: </h3> <br>
+      <p> 1) Gene annotation (from Prokka) </p> <br>
+      <p> 2) Phylogenetic tree: </p> <br>
+      <p> 3) Mutation rate across different genes: </p> 
+      
     
 <p>{{ moment(current_time).format('LLL') }}</p>
 
