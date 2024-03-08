@@ -13,18 +13,21 @@
     <br> <br>
 
     <style>
-        #textbox {
-          width: 300px;
-          height: 150px;
-        }
-      </style>
-
+      #textbox {
+        width: 350px;
+        height: 200px;
+        resize: none; /* Prevent resizing of the textarea */
+        overflow: auto; /* Add scrollbar if content overflows */
+        white-space: pre-wrap; /* Preserve line breaks entered by the user */
+      }
+    </style>
+    
     <form>
-        <label for="textbox">Enter your sequences in FASTA format below: </label> <br>
-        <input type="text" id="textbox" name="textbox"> <br>
-        <input type="submit" value="Submit">
-      </form>
-
+      <label for="textbox">Enter your sequences in FASTA format below:</label><br>
+      <textarea id="textbox" name="textbox" wrap="soft"></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+    
       <br>
 
       <h3> Output: </h3> <br>
